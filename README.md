@@ -10,7 +10,7 @@ Will generate an urlencoded body string
 ```lua
 local httptools = require 'vendor.httptools.httptools'
 
-httptools.postBody{
+httptools.postbody{
 	foo = bar
 }
 ```
