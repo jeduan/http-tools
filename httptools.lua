@@ -18,7 +18,7 @@ function M.postbody(arg)
 	if type(arg) == 'table' then
 		local t = {}
 		for k, v in pairs(arg) do
-			t[#t + 1] = k .. '=' .. M.urlEncode(v)
+			t[#t + 1] = k .. '=' .. M.urlencode(v)
 		end
 		local c = table.concat(t, '&')
 		return c
